@@ -1,0 +1,188 @@
+* { 
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Cabin', sans-serif;
+    font-weight: bold;
+}
+
+html, body {
+    height: 100%;
+}
+
+.menu {
+    position: fixed;
+    display: flex; 
+    width: 100%;
+    height: 56px;
+    background-color: white;
+    align-items: center;
+    padding-left: 50px;
+    padding-right: 50px; 
+    box-sizing: border-box;
+}
+
+.opt {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    background-color: none;
+}
+
+.login {
+    flex: 1;
+    height: 100%;
+    background-color: none;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.logo {
+    margin-right: 30px;
+}
+
+.menu-nubank {
+    display: flex;
+    align-items: center;
+}
+
+.menu-nubank ul {
+    display: flex;
+    list-style: none;
+}
+
+.menu-nubank li {
+    margin-right: 27px;
+    display: flex;
+    align-items: center;
+}
+
+.menu-nubank a {
+    text-decoration: none;
+    color: black;
+}
+
+.login li {
+    list-style: none;
+}
+
+.login a {
+    text-decoration: none;
+    color: #9903d6;
+}
+
+.pagina {
+    padding-top: 56px;
+    display: flex;
+    width: 100%;
+    min-height: 834px;
+    background: url(https://nubank.com.br/images-cms/1715188229-header-site-desktop.png?w=1920&dpr=1&auto=compress&fm=webp)no-repeat center center fixed;
+    background-size: cover;
+    background-color: #9903d6;
+    align-items: center;
+    padding-left: 60px;
+    padding-right: 60px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.esquerda {
+    flex: 1;
+    background-color: none;
+    align-items: center;
+    color: white;
+}
+
+.direita {
+    flex: 1;
+    background-color: none;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.box {
+    width: 330px;
+    height: 303px;
+    padding: 24px;
+    background-color: white;
+    border-radius: 15px;
+}
+
+.esquerda h1 {
+    font-size: 48px;
+    max-width: 80%;
+}
+
+.esquerda h2 {
+    font-size: 25px;
+    max-width: 80%;
+}
+
+.box p {
+    font-size: 26px;
+    margin-bottom: 32px;
+}
+
+.input {
+    padding: 20px 0 35px;
+}
+
+.input input {
+    width: 282px;
+    height: 41px;
+    border-color: #e7e7e7;
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
+}
+
+.button {
+    background-color: #9903d6;
+    border: none;
+    color: white;
+    width: 275px;
+    padding: 10px 0px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.button4 {
+    background-color: #e7e7e7;
+    color: rgb(190, 190, 190);
+    border-radius: 50px;
+}
+
+.button4:hover {
+    background-color: #9903d6;
+    color: white;
+}
+
+textarea:focus, input:focus, select:focus {
+    box-shadow: 0 0 0 0;
+    outline: 0;
+} 
+
+@media (max-width: 655px) {
+    .pagina {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .esquerda, .direita {
+        width: 100%;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+}
